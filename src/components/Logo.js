@@ -33,7 +33,7 @@ const Logo = () => {
       
       {/* 临时占位 - 替换为你的 logo SVG 代码 */}
       <rect width="200" height="60" rx="8" fill="#0A3161"/>
-      <text x="100" y="35" textAnchor="middle" fill="white" fontSize="16" fontFamily="Inter" fontWeight="600">
+              <text x="100" y="35" textAnchor="middle" fill="white" fontSize="16" fontFamily="Times New Roman" fontWeight="600">
         Your Logo SVG Here
       </text>
     </svg>
@@ -56,7 +56,7 @@ const Logo = () => {
             e.target.style.display = 'none';
             const fallback = document.createElement('div');
             fallback.className = 'logo-fallback-temp';
-            fallback.style.cssText = 'padding: 16px 24px; background: #0A3161; color: white; border-radius: 8px; font-family: Inter; font-weight: 600;';
+            fallback.style.cssText = 'padding: 16px 24px; background: #0A3161; color: white; border-radius: 8px; font-family: "Times New Roman", Times, serif; font-weight: 600;';
             fallback.textContent = '请将 logo.svg 放入 public/images/ 目录';
             e.target.parentNode.appendChild(fallback);
           }}

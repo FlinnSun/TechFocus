@@ -17,7 +17,7 @@ const SolutionPage = () => {
         "· Data Visualization & Dashboards (Power BI, Tableau)",
         "· Decision Support for Transportation, Health, and National Security"
       ],
-      textStyle: "inter-text"
+      textStyle: "times-text"
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const SolutionPage = () => {
         "· Data Center Modernization (DCOI)",
         "· SIPR/NIPR/NSANet Infrastructure Support"
       ],
-      textStyle: "inter-text"
+      textStyle: "times-text"
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ const SolutionPage = () => {
         "· Red/Blue/Purple Team Assessments",
         "· IoT & Cyber-Physical System Security"
       ],
-      textStyle: "inter-text"
+      textStyle: "times-text"
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const SolutionPage = () => {
         "· Enterprise Web and Mobile Application Development",
         "· Legacy System Modernization"
       ],
-      textStyle: "inter-text"
+      textStyle: "times-text"
     },
     {
       id: 5,
@@ -70,7 +70,7 @@ const SolutionPage = () => {
         "· Asset Management and ITIL/ITSM Service Delivery",
         "· VIP Executive Support"
       ],
-      textStyle: "inter-text"
+      textStyle: "times-text"
     }
   ];
 

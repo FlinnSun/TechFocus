@@ -10,7 +10,7 @@
 
 - **前端框架**: React 18.2.0
 - **样式**: 原生 CSS（基于 Figma 设计规范）
-- **字体**: Inter 字体系列
+- **字体**: Times New Roman 字体系列
 - **构建工具**: Create React App
 - **开发语言**: JavaScript (JSX)
 

@@ -173,21 +173,6 @@
 }
 
 /* 不同文本样式类 */
-.inter-text .service-subtitle {
-  font-family: 'Times New Roman', serif;
-  font-size: 22px;
-  line-height: 1.4;
-  font-weight: bold;
-  margin-top: 12px;
-  margin-bottom: 8px;
-}
-
-.inter-text .service-detail-item {
-  font-family: 'Times New Roman', serif;
-  font-size: 22px;
-  line-height: 1.4;
-  font-weight: normal;
-}
 
 .times-text .service-subtitle,
 .times-text .service-detail-item {
@@ -331,10 +316,7 @@
     font-size: 28px;
   }
 
-  .inter-text .service-subtitle,
-  .inter-text .service-detail-item {
-    font-size: 20px;
-  }
+  /* inter-text class removed - all text now uses times-text */
 
   .times-text .service-subtitle,
   .times-text .service-detail-item {
@@ -408,10 +390,7 @@
     text-align: center;
   }
 
-  .inter-text .service-subtitle,
-  .inter-text .service-detail-item {
-    font-size: 16px;
-  }
+  /* inter-text class removed - all text now uses times-text */
 
   .times-text .service-subtitle,
   .times-text .service-detail-item {
@@ -453,8 +432,6 @@
     font-size: 20px;
   }
 
-  .inter-text .service-subtitle,
-  .inter-text .service-detail-item,
   .times-text .service-subtitle,
   .times-text .service-detail-item,
   .times-text-large .service-subtitle,
