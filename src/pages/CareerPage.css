@@ -24,6 +24,298 @@
   margin-bottom: 20px;
 }
 
+/* 添加缺失的分隔线样式 */
+.career-title-line {
+  width: 129px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 0 auto 40px auto; /* 居中显示 */
+}
+
+.section-line {
+  width: 129px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 0 0 40px 0;
+}
+
+/* 添加缺失的左右布局容器样式 */
+.leadership-content,
+.career-responsibility-content {
+  display: flex;
+  align-items: stretch; /* 改为stretch使子元素等高 */
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* People section 单独设置，不拉伸高度 */
+.career-people-content {
+  display: flex;
+  align-items: flex-start; /* 顶部对齐，图片保持自然高度 */
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Benefits section 单独设置，不拉伸高度 */
+.career-benefits-content {
+  display: flex;
+  align-items: flex-start; /* 顶部对齐，图片保持自然高度 */
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Leadership section styles */
+.leader-photo {
+  flex: 0 0 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex; /* 添加flex布局 */
+  flex-direction: column; /* 垂直方向 */
+}
+
+.leader-image {
+  width: 100%;
+  height: 100%; /* 改为100%填充整个容器 */
+  object-fit: cover; /* 保持比例填充 */
+  display: block;
+  flex: 1; /* 让图片占据所有可用空间 */
+}
+
+.leader-info {
+  flex: 1;
+}
+
+.leader-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.3;
+  color: #000000;
+  margin: 0 0 12px 0;
+}
+
+.leader-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #FF6A00;
+  margin: 0 0 20px 0;
+}
+
+.leader-description {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0 0 16px 0;
+}
+
+/* People section styles - text left, image right */
+.career-people-left {
+  flex: 1;
+}
+
+.career-people-right {
+  flex: 0 0 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.career-people-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.career-people-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0 0 16px 0;
+}
+
+/* Benefits section styles - image left, text right */
+.career-benefits-left {
+  flex: 0 0 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 0; /* 确保没有额外的外边距 */
+  padding: 0; /* 确保没有内边距 */
+}
+
+.career-benefits-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0; /* 移除图片的默认外边距 */
+  padding: 0; /* 移除图片的内边距 */
+  vertical-align: top; /* 避免行内元素底部空白 */
+}
+
+.career-benefits-right {
+  flex: 1;
+}
+
+.career-benefits-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0 0 16px 0;
+}
+
+.career-benefits-list {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  padding-left: 20px;
+  margin: 16px 0;
+}
+
+.career-benefits-list li {
+  margin-bottom: 8px;
+}
+
+.browse-openings {
+  margin-top: 24px;
+}
+
+.browse-button {
+  display: inline-block;
+  background: #FF6A00;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.browse-button:hover {
+  background: #E55A00;
+  color: #FFFFFF;
+}
+
+/* Responsibility section styles - text left, image right */
+.career-responsibility-left {
+  flex: 1;
+}
+
+.career-responsibility-right {
+  flex: 0 0 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex; /* 添加flex布局 */
+  flex-direction: column; /* 垂直方向 */
+  min-height: 400px; /* 确保最小高度 */
+}
+
+.career-responsibility-image {
+  width: 100%;
+  height: 100%; /* 改为100%填充整个容器 */
+  object-fit: cover; /* 保持比例填充 */
+  object-position: center; /* 图片居中显示 */
+  display: block;
+  flex: 1; /* 让图片占据所有可用空间 */
+  min-height: 100%; /* 确保填满容器 */
+}
+
+.career-responsibility-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0 0 16px 0;
+}
+
+/* Image placeholder styles */
+.image-placeholder {
+  background: #F8F9FA;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  min-height: 300px;
+  border-radius: 8px;
+}
+
+/* Testimonials section styles */
+.testimonials-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: #F8F9FA;
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.testimonial-quote {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #FF6A00;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 30px 0 24px 0;
+  font-style: italic;
+}
+
+.testimonial-author {
+  margin-top: 24px;
+}
+
+.author-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.author-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666666;
+  margin: 0;
+}
+
 .career-subtitle {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
@@ -440,6 +732,36 @@
     font-size: 28px;
   }
   
+  /* 左右布局容器在小屏幕上变为垂直堆叠 */
+  .leadership-content,
+  .career-people-content,
+  .career-benefits-content,
+  .career-responsibility-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* 调整图片容器在小屏幕上的宽度 */
+  .leader-photo,
+  .career-people-right,
+  .career-benefits-left,
+  .career-responsibility-right {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px; /* 添加最小高度确保在小屏幕上图片有合适的高度 */
+  }
+  
+  /* 调整Testimonials在小屏幕上的布局 */
+  .testimonials-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+  
   .why-join-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -498,6 +820,42 @@
   .job-meta {
     flex-direction: column;
     gap: 12px;
+  }
+  
+  /* 进一步优化左右布局在超小屏幕上的显示 */
+  .leadership-content,
+  .career-people-content,
+  .career-benefits-content,
+  .career-responsibility-content {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .leader-name {
+    font-size: 24px;
+  }
+  
+  .leader-title {
+    font-size: 18px;
+  }
+  
+  .career-people-text,
+  .career-benefits-text,
+  .career-responsibility-text,
+  .leader-description {
+    font-size: 14px;
+  }
+  
+  .testimonial-card {
+    padding: 20px 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 14px;
+  }
+  
+  .author-name {
+    font-size: 16px;
   }
   
   .cta-title {
