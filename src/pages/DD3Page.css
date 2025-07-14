@@ -1,0 +1,274 @@
+/* DD3 Page - Cybersecurity */
+html, body, .dd3-root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;        /* 防止横向滚动条 */
+}
+
+.dd3-root {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  background: #110733;
+  border: 1px solid #000000;
+  padding-bottom: 300px; /* Add space for Footer */
+}
+
+.dd3-banner-title-img {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #FFFFFF;
+}
+
+.dd3-main-text {
+  position: absolute;
+  width: calc(100% - 130px); /* 调整宽度使其占据大部分页面宽度，并留出左右边距 */
+  left: 65px; /* 与 RETURN TO SERVICE 对齐 */
+  top: 814px; /* Adjusted for navigation + image */
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.dd3-section1-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 24px; /* 根据需要调整间距 */
+}
+
+.dd3-section1-paragraph {
+  font-weight: 400;
+  font-size: 20px; /* 段落字体更小 */
+  line-height: 150%; /* 调整行高以提高可读性 */
+  text-align: left; /* 段落左对齐 */
+  margin-bottom: 16px; /* 段落之间的间距 */
+  width: 100%; /* 确保段落占据容器的全部宽度 */
+}
+
+.dd3-paragraph-bold {
+  font-weight: 700; /* 第一段加粗 */
+}
+
+.dd3-our-solution {
+  position: absolute;
+  width: 369px;
+  height: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1244px; /* Adjusted for navigation */
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.dd3-our-solution-text {
+  position: relative;
+  z-index: 1;
+  top: 10px; /* 根据需要调整此值 */
+}
+
+.dd3-our-solution-rect {
+  box-sizing: border-box;
+  position: absolute;
+  width: 342px;
+  height: 70px; /* Adjusted height */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  border: 5px solid #FF6A00;
+  border-radius: 60px;
+}
+
+/* Solution Tabs Navigation */
+.dd3-solution-tabs-nav {
+  position: absolute;
+  top: 1364px; /* Adjusted for navigation */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 20px 0;
+}
+
+.dd3-solution-tab-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.dd3-solution-tab-item.active {
+  color: #FF6A00;
+  border-bottom: 2px solid #FF6A00;
+}
+
+.dd3-tab-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.dd3-solution-tab-item.active .dd3-tab-icon {
+  fill: #FF6A00;
+}
+
+/* Solution Tab Content */
+.dd3-solution-tab-content {
+  position: absolute;
+  top: 1464px; /* Adjusted for navigation */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+.dd3-solution-tab-pane {
+  width: 100%;
+}
+
+.dd3-solution-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px 60px;
+  width: 100%;
+}
+
+.dd3-solution-list-item {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #FF6A00;
+  margin-bottom: 20px;
+}
+
+.dd3-solution-list-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.dd3-solution-list-item ul li {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.dd3-solution-list-item ul li::before {
+  content: "o";
+  position: absolute;
+  left: 0;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+/* For single-item lists (like Why TechFocus) - updated for grid layout */
+.dd3-solution-list-item:only-child {
+  grid-column: 1 / -1;
+}
+
+/* For other tab content that might need full width */
+.dd3-solution-list-item:nth-child(n+5) {
+  grid-column: 1 / -1;
+}
+
+/* Our Tools & Platforms Tab Styles */
+.dd3-tools-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.dd3-tools-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.dd3-tools-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.dd3-tools-text {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.dd3-tools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dd3-tools-list li {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.dd3-tools-list li .tools-title {
+  color: #FF6A00;
+  font-weight: 600;
+}
+
+.dd3-tools-list li .tools-content {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+/* Why TechFocus specific styles - all text white and bold */
+.why-techfocus-list li {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.dd3-img-section1 {
+  position: absolute;
+  top: 164px; /* Start below navigation */
+  left: 0;
+  width: 100vw;
+  height: 600px;              /* 增加高度以完全显示图片 */
+  background: url('../../public/images/3.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7; /* 设置不透明度为 70% */
+} 

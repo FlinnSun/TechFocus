@@ -1,0 +1,596 @@
+/* Data Analytics Details Page - Figma Node 1-703 High Fidelity */
+html, body, .data-analytics-details-root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;        /* 防止横向滚动条 */
+}
+
+.data-analytics-details-root {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  background: #110733;
+  border: 1px solid #000000;
+  padding-bottom: 300px; /* Add space for Footer */
+  /* overflow: hidden; */ /* Removed to allow Footer to display properly */
+}
+
+/* Removed custom navigation styles - now using unified Header */
+
+.data-analytics-details-logo {
+  position: absolute;
+  width: 306px;
+  height: 65px;
+  left: 47px;
+  top: 49px;
+}
+
+.data-analytics-details-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
+  position: absolute;
+  width: 884px;
+  height: 52px;
+  right: 38px;
+  top: 61px;
+}
+
+.data-analytics-details-items span {
+  width: 785px;
+  height: 24px;
+  font-family: 'Times New Roman', Times, serif; /* Changed from Inter */
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #000000;
+}
+
+.data-analytics-details-contract-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  gap: 8px;
+  width: 116px;
+  height: 52px;
+  background: #000000;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.data-analytics-details-contract-btn span {
+  width: 68px;
+  height: 24px;
+  font-family: 'Times New Roman', Times, serif; /* Changed from Inter */
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.data-analytics-details-banner-frame {
+  position: absolute;
+  width: 1436px;
+  height: 478px;
+  left: 2px;
+  top: 163px;
+  background: lightgray 50% / cover no-repeat;
+  opacity: 0.7;
+}
+
+.data-analytics-details-banner-title-img {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #FFFFFF;
+}
+
+.data-analytics-details-return {
+  position: absolute;
+  width: 250px; /* 调整宽度以适应内容和图片 */
+  height: 69px;
+  left: 65px; /* 调整位置使其在左侧可见 */
+  top: 37px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left; /* 文本左对齐 */
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 添加图标和文本之间的间距 */
+}
+
+.data-analytics-details-return-icon {
+  position: relative; /* 从 absolute 改为 relative，使其在 flex 容器中正常排列 */
+  width: 47px;
+  height: 55px;
+  left: 0; /* 移除绝对定位的 left 属性 */
+  top: 0; /* 移除绝对定位的 top 属性 */
+  /* Icon fill is white, handled in JSX SVG */
+}
+
+.data-analytics-details-main-text {
+  position: absolute;
+  width: calc(100% - 130px); /* 调整宽度使其占据大部分页面宽度，并留出左右边距 */
+  left: 65px; /* 与 RETURN TO SERVICE 对齐 */
+  /* transform: translateX(-50%); */ /* 移除水平居中变换 */
+  top: 814px; /* Adjusted for navigation + image */
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */ /* 移除此属性，让子元素根据自身 text-align 对齐 */
+}
+
+.data-analytics-details-section1-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 24px; /* 根据需要调整间距 */
+}
+
+.data-analytics-details-section1-paragraph {
+  font-weight: 400;
+  font-size: 20px; /* 段落字体更小 */
+  line-height: 150%; /* 调整行高以提高可读性 */
+  text-align: left; /* 段落左对齐 */
+  margin-bottom: 16px; /* 段落之间的间距 */
+  width: 100%; /* 确保段落占据容器的全部宽度 */
+}
+
+.data-analytics-details-our-solution {
+  position: absolute;
+  width: 369px;
+  height: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1244px; /* Adjusted for navigation */
+  font-family: 'Times New Roman', Times, serif; /* Changed from Inter */
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.data-analytics-details-our-solution-text {
+  position: relative;
+  z-index: 1;
+  top: 10px; /* 根据需要调整此值 */
+}
+
+.data-analytics-details-our-solution-rect {
+  box-sizing: border-box;
+  position: absolute;
+  width: 342px;
+  height: 70px; /* Adjusted height */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  border: 5px solid #FF6A00;
+  border-radius: 60px;
+}
+
+/* Solution Tabs Navigation */
+.data-analytics-details-solution-tabs-nav {
+  position: absolute;
+  top: 1364px; /* Adjusted for navigation */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 20px 0;
+}
+
+.data-analytics-details-solution-tab-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.data-analytics-details-solution-tab-item.active {
+  color: #FF6A00;
+  border-bottom: 2px solid #FF6A00;
+}
+
+.data-analytics-details-tab-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.data-analytics-details-solution-tab-item.active .data-analytics-details-tab-icon {
+  fill: #FF6A00;
+}
+
+/* Solution Tab Content */
+.data-analytics-details-solution-tab-content {
+  position: absolute;
+  top: 1464px; /* Adjusted for navigation */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+.data-analytics-details-solution-tab-pane {
+  width: 100%;
+}
+
+.data-analytics-details-solution-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px 60px;
+  width: 100%;
+}
+
+.data-analytics-details-solution-list-item {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #FF6A00;
+  margin-bottom: 20px;
+}
+
+.data-analytics-details-solution-list-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.data-analytics-details-solution-list-item ul li {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.data-analytics-details-solution-list-item ul li::before {
+  content: "o";
+  position: absolute;
+  left: 0;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+/* For single-item lists (like Why TechFocus) - updated for grid layout */
+.data-analytics-details-solution-list-item:only-child {
+  grid-column: 1 / -1;
+}
+
+/* For other tab content that might need full width */
+.data-analytics-details-solution-list-item:nth-child(n+5) {
+  grid-column: 1 / -1;
+}
+
+/* Our Tools & Platforms Tab Styles */
+.data-analytics-details-tools-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.data-analytics-details-tools-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.data-analytics-details-tools-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.data-analytics-details-tools-text {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.data-analytics-details-tools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.data-analytics-details-tools-list li {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.data-analytics-details-tools-list li .tools-title {
+  color: #FF6A00;
+  font-weight: 600;
+}
+
+.data-analytics-details-tools-list li .tools-content {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+/* Why TechFocus specific styles - all text white and bold */
+.why-techfocus-list li {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.data-analytics-details-list-fill-icon1 {
+  position: absolute;
+  left: 16.11%;
+  right: 81.11%;
+  top: 29.03%;
+  bottom: 69.86%;
+  /* Fill is white */
+}
+
+.data-analytics-details-people-fill-icon {
+  position: absolute;
+  left: 67.43%;
+  right: 29.44%;
+  top: 33.22%;
+  bottom: 65.53%;
+  /* Fill is white */
+}
+
+.data-analytics-details-view-list-fill-icon {
+  position: absolute;
+  left: 47.08%;
+  right: 51.25%;
+  top: 31.86%;
+  bottom: 67.11%;
+  /* Fill is white */
+}
+
+.data-analytics-details-line7 {
+  position: absolute;
+  width: 129px;
+  height: 0px;
+  left: 80px;
+  top: 1260px;
+  border: 2px solid #FF6A00;
+}
+
+.data-analytics-details-line11 {
+  position: absolute;
+  width: 905px;
+  height: 0px;
+  left: 450px;
+  top: 1260px;
+  border: 2px solid #FF6A00;
+}
+
+.data-analytics-details-line9 {
+  position: absolute;
+  width: 241px;
+  height: 0px;
+  left: 209px;
+  top: 1176px;
+  border: 2px solid #FF6A00;
+}
+
+.data-analytics-details-line8 {
+  position: absolute;
+  width: 84px;
+  height: 0px;
+  left: 209px;
+  top: 1176px;
+  border: 2px solid #FF6A00;
+  transform: rotate(-90deg);
+}
+
+.data-analytics-details-line10 {
+  position: absolute;
+  width: 84px;
+  height: 0px;
+  left: 450px;
+  top: 1176px;
+  border: 2px solid #FF6A00;
+  transform: rotate(-90deg);
+}
+
+.data-analytics-details-ai-data-list {
+  position: absolute;
+  width: 651px;
+  height: 576px;
+  left: 86px;
+  top: 1341px;
+  font-family: 'Times New Roman', Times, serif; /* Changed from Inter */
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #FF6A00;
+}
+
+.data-analytics-details-img-section1 {
+  position: absolute;
+  top: 164px; /* Start below navigation */
+  left: 0;
+  width: 100vw;
+  height: 600px;              /* 增加高度以完全显示图片 */
+  background: url('../../public/images/1.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.7; /* 设置不透明度为 70% */
+}
+
+/* 新增标题样式，绝对居中、白色、加粗 */
+.data-analytics-details-banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 64px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  line-height: 77px;
+}
+
+.data-analytics-details-rect11 {
+  position: absolute;
+  width: 15px;
+  height: 239px;
+  left: 65px;
+  top: 2099px;
+  background: #FF6A00;
+}
+
+.data-analytics-details-rect13 {
+  position: absolute;
+  width: 15px;
+  height: 243px;
+  left: 65px;
+  top: 2091px;
+  background: #FF6A00;
+  transform: rotate(-90deg);
+}
+
+.data-analytics-details-rect12 {
+  position: absolute;
+  width: 15px;
+  height: 200px;
+  left: 761px;
+  top: 2461px;
+  background: #FF6A00;
+}
+
+.data-analytics-details-rect14 {
+  position: absolute;
+  width: 15px;
+  height: 200px;
+  left: 568px;
+  top: 2646px;
+  background: #FF6A00;
+  transform: rotate(-90deg);
+}
+
+.data-analytics-details-languages-list {
+  position: absolute;
+  width: 613px;
+  height: 529px;
+  left: 796px;
+  top: 2132px;
+  font-family: 'Times New Roman', Times, serif; /* Changed from Inter */
+  font-style: italic;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FF6A00;
+}
+
+.data-analytics-details-img-section2 {
+  position: absolute;
+  width: 640.36px;
+  height: 498px;
+  left: 97px;
+  top: 3002px;
+  background: url('../../public/images/dd1.jpeg'); /* Assuming this is the correct local path */
+  background-size: cover;
+}
+
+.data-analytics-details-rect16 {
+  position: absolute;
+  width: 15px;
+  height: 239px;
+  left: 65px;
+  top: 2975px;
+  background: #FF6A00;
+}
+
+.data-analytics-details-rect17 {
+  position: absolute;
+  width: 15px;
+  height: 243px;
+  left: 65px;
+  top: 2967px;
+  background: #FF6A00;
+  transform: rotate(-90deg);
+}
+
+.data-analytics-details-rect18 {
+  position: absolute;
+  width: 15px;
+  height: 200px;
+  left: 761px;
+  top: 3337px;
+  background: #FF6A00;
+}
+
+.data-analytics-details-rect19 {
+  position: absolute;
+  width: 15px;
+  height: 200px;
+  left: 568px;
+  top: 3522px;
+  background: #FF6A00;
+  transform: rotate(-90deg);
+}
+
+.data-analytics-details-sba-list {
+  position: absolute;
+  width: 613px;
+  height: 529px;
+  left: 797px;
+  top: 3055px;
+  font-family: 'Times New Roman', Times, serif; /* Changed from Inter */
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+
+/* Old footer styles removed - using shared Footer component instead */ 

@@ -1,0 +1,131 @@
+.edsob-page {
+  background: #FFFFFF;
+  min-height: 100vh;
+  padding-top: 164px; /* Account for fixed header */
+  padding-bottom: 60px;
+}
+
+.edsob-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* 页面标题部分 */
+.edsob-header {
+  margin-bottom: 89px;
+}
+
+.edsob-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0;
+}
+
+/* 介绍标题部分 */
+.introduction-title-section {
+  margin-bottom: 40px;
+}
+
+.introduction-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.introduction-title-line {
+  width: 129px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 0;
+}
+
+/* 介绍内容部分 */
+.introduction-content-section {
+  max-width: 1335px;
+}
+
+.introduction-content-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 0;
+}
+
+.introduction-content-line {
+  width: 129px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 50px 0 0 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 1440px) {
+  .edsob-container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edsob-page {
+    padding-top: 120px;
+  }
+  
+  .edsob-container {
+    padding: 0 30px;
+  }
+  
+  .edsob-title {
+    font-size: 32px;
+  }
+  
+  .introduction-title {
+    font-size: 28px;
+  }
+  
+  .introduction-content-text {
+    font-size: 20px;
+  }
+  
+  .edsob-header {
+    margin-bottom: 60px;
+  }
+  
+  .introduction-title-section {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edsob-container {
+    padding: 0 20px;
+  }
+  
+  .edsob-title {
+    font-size: 28px;
+  }
+  
+  .introduction-title {
+    font-size: 24px;
+  }
+  
+  .introduction-content-text {
+    font-size: 18px;
+  }
+  
+  .introduction-title-line,
+  .introduction-content-line {
+    width: 100px;
+  }
+} 

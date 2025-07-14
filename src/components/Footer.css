@@ -1,0 +1,151 @@
+.footer {
+  background-color: #ffffff;
+  padding: 60px 0 40px;
+  border-top: 1px solid #E6E6E6;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 0;
+  margin-bottom: 40px;
+}
+
+.footer-section:first-child {
+  padding-right: 40px;
+}
+
+.footer-section:nth-child(2) {
+  padding-left: 40px;
+  padding-right: 5px;
+}
+
+.footer-section:nth-child(3) {
+  padding-left: 5px;
+}
+
+.footer-section h4 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li:first-child {
+  margin-top: 0;
+}
+
+.footer-section ul li a {
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #FF6A00;
+}
+
+.footer-info p {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+/* 社交链接样式 - 增大卡片确保图标大小一致 */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.05);
+}
+
+.social-link img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* 第二张图片 - 增大尺寸 */
+.social-link:nth-child(2) img {
+  width: 52px;
+  height: 52px;
+}
+
+/* 第三张图片 - 减小尺寸 */
+.social-link:nth-child(3) img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-section:first-child,
+  .footer-section:nth-child(2),
+  .footer-section:nth-child(3) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .footer-info p {
+    font-size: 18px;
+  }
+  
+  .social-link {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .social-link img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* 移动端第二张图片 - 增大尺寸 */
+  .social-link:nth-child(2) img {
+    width: 44px;
+    height: 44px;
+  }
+  
+  /* 移动端第三张图片 - 减小尺寸 */
+  .social-link:nth-child(3) img {
+    width: 28px;
+    height: 28px;
+  }
+} 

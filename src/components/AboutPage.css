@@ -1,0 +1,443 @@
+/* About Page - 基于设计图重新构造 */
+.about-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  padding-top: 84px; /* 为固定导航栏留出空间 */
+}
+
+.about-page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+/* 页面标题区域 */
+.about-page-header {
+  text-align: center;
+  padding: 60px 0 40px 0;
+  background: #FFFFFF;
+}
+
+.about-page-title {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.about-page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #FF6A00;
+  border-radius: 2px;
+}
+
+/* 概览区域 */
+.about-overview-section {
+  display: flex;
+  min-height: 500px;
+  background: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.overview-left {
+  flex: 1;
+  position: relative;
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.tech-visual-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tech-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a1a1a;
+  color: #00bcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.overview-right {
+  flex: 1;
+  background: #8FA8B8;
+  padding: 60px 50px;
+  color: #FFFFFF;
+}
+
+.overview-right h2 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+}
+
+.overview-right p {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.overview-right p:last-child {
+  margin-bottom: 0;
+}
+
+/* 使命愿景区域 */
+.about-mission-section {
+  display: flex;
+  min-height: 500px;
+  background: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.mission-left {
+  flex: 1;
+  background: #FF9A5B;
+  padding: 60px 50px;
+  color: #FFFFFF;
+}
+
+.mission-left h2 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+}
+
+.mission-content p {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.mission-content p:last-child {
+  margin-bottom: 0;
+}
+
+.mission-right {
+  flex: 1;
+  position: relative;
+  background: #b3d9ff;
+  overflow: hidden;
+}
+
+.mission-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mission-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #b3d9ff;
+  color: #0066cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 团队区域 */
+.about-teams-section {
+  display: flex;
+  min-height: 500px;
+  background: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.teams-left {
+  flex: 1;
+  position: relative;
+  background: #2a2a2a;
+  overflow: hidden;
+}
+
+.teams-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.teams-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2a2a2a;
+  color: #ff6b9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.teams-right {
+  flex: 1;
+  background: #8FA8B8;
+  padding: 60px 50px;
+  color: #FFFFFF;
+}
+
+.teams-right h2 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+}
+
+.teams-right p {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.teams-right p:last-child {
+  margin-bottom: 0;
+}
+
+/* 底部美国国会大厦区域 */
+.about-capitol-section {
+  padding: 60px 40px 60px 40px;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.capitol-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.capitol-placeholder {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .about-page {
+    padding-top: 80px; /* 平板端调整 */
+  }
+  
+  .about-page-title {
+    font-size: 40px;
+  }
+  
+  .overview-right,
+  .mission-left,
+  .teams-right {
+    padding: 50px 40px;
+  }
+  
+  .overview-right h2,
+  .mission-left h2,
+  .teams-right h2 {
+    font-size: 28px;
+  }
+  
+  .overview-right p,
+  .mission-content p,
+  .teams-right p {
+    font-size: 15px;
+  }
+  
+  .about-capitol-section {
+    padding: 50px 30px;
+  }
+  
+  .capitol-image {
+    max-height: 400px;
+  }
+  
+  .capitol-placeholder {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding-top: 76px; /* 移动端调整 */
+  }
+  
+  .about-page-header {
+    padding: 40px 20px 30px 20px;
+  }
+  
+  .about-page-title {
+    font-size: 32px;
+  }
+  
+  .about-overview-section,
+  .about-mission-section,
+  .about-teams-section {
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 40px;
+  }
+  
+  .overview-left,
+  .mission-right,
+  .teams-left {
+    min-height: 300px;
+  }
+  
+  .overview-right,
+  .mission-left,
+  .teams-right {
+    padding: 40px 30px;
+  }
+  
+  .overview-right h2,
+  .mission-left h2,
+  .teams-right h2 {
+    font-size: 24px;
+  }
+  
+  .overview-right p,
+  .mission-content p,
+  .teams-right p {
+    font-size: 14px;
+  }
+  
+  .about-capitol-section {
+    padding: 40px 20px;
+  }
+  
+  .capitol-image {
+    max-height: 300px;
+  }
+  
+  .capitol-placeholder {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding-top: 72px;
+  }
+  
+  .about-page-header {
+    padding: 30px 15px 20px 15px;
+  }
+  
+  .about-page-title {
+    font-size: 28px;
+  }
+  
+  .about-overview-section,
+  .about-mission-section,
+  .about-teams-section {
+    margin-bottom: 30px;
+  }
+  
+  .overview-right,
+  .mission-left,
+  .teams-right {
+    padding: 30px 20px;
+  }
+  
+  .overview-right h2,
+  .mission-left h2,
+  .teams-right h2 {
+    font-size: 22px;
+  }
+  
+  .overview-right p,
+  .mission-content p,
+  .teams-right p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .about-capitol-section {
+    padding: 30px 15px;
+  }
+  
+  .capitol-image {
+    max-height: 250px;
+  }
+  
+  .capitol-placeholder {
+    height: 180px;
+  }
+} 

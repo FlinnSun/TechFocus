@@ -1,0 +1,212 @@
+.hardware-page {
+  background: #FFFFFF;
+  min-height: 100vh;
+  padding-top: 164px; /* Account for fixed header */
+  padding-bottom: 60px;
+}
+
+.hardware-page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 124px;
+}
+
+.hardware-page-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.hardware-page-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.hardware-title-line {
+  width: 279px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 0 auto;
+}
+
+.hardware-content {
+  color: #000000;
+}
+
+.hardware-main-text {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+.hardware-main-text p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.hardware-main-text p:last-child {
+  margin-bottom: 0;
+}
+
+.hardware-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hardware-section h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #FF6A00;
+  margin-bottom: 20px;
+}
+
+.hardware-section p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hardware-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.hardware-service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 106, 0, 0.3);
+  border-radius: 8px;
+  padding: 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hardware-service-card:hover {
+  transform: translateY(-5px);
+  border-color: #FF6A00;
+}
+
+.hardware-service-card h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FF6A00;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.hardware-service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hardware-service-card li {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.hardware-service-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #FF6A00;
+  font-weight: bold;
+}
+
+/* 响应式设计 */
+@media (max-width: 1440px) {
+  .hardware-page-container {
+    padding: 0 80px;
+  }
+  
+  .hardware-main-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hardware-page {
+    padding-top: 140px;
+  }
+  
+  .hardware-page-container {
+    padding: 0 60px;
+  }
+  
+  .hardware-page-title {
+    font-size: 48px;
+  }
+  
+  .hardware-title-line {
+    width: 200px;
+    margin-left: calc(50% - 100px);
+  }
+  
+  .hardware-main-text p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hardware-page {
+    padding-top: 120px;
+  }
+  
+  .hardware-page-container {
+    padding: 0 40px;
+  }
+  
+  .hardware-page-title {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .hardware-title-line {
+    width: 150px;
+    margin-left: calc(50% - 75px);
+  }
+  
+  .hardware-main-text p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hardware-page-container {
+    padding: 0 20px;
+  }
+  
+  .hardware-page-title {
+    font-size: 28px;
+  }
+  
+  .hardware-title-line {
+    width: 120px;
+    margin-left: calc(50% - 60px);
+  }
+  
+  .hardware-main-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+} 

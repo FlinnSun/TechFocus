@@ -1,0 +1,316 @@
+.news-page {
+  background: #FFFFFF;
+  min-height: 100vh;
+  padding-top: 164px; /* Account for fixed header */
+  padding-bottom: 60px;
+}
+
+.news-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* 页面标题部分 */
+.news-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.news-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 57px;
+  line-height: 1.12;
+  letter-spacing: -0.44%;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.news-title-line {
+  width: 498px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 0 auto;
+}
+
+/* 通用部分样式 */
+.section-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.section-line {
+  width: 57px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 0 0 60px 0;
+}
+
+
+
+/* Our Growth, Our Impact 部分 */
+.news-updates-section {
+  margin-bottom: 120px;
+  padding: 0 50px;
+  position: relative;
+  z-index: 5;
+}
+
+.news-updates-content {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.news-updates-left {
+  flex: 1;
+  max-width: 794px;
+}
+
+.news-updates-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.news-updates-right {
+  flex: 0 0 525px;
+  height: 530px;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-updates-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.news-updates-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a1a1a;
+  color: #00bcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Technology Trends & Insights 部分 */
+.news-insights-section {
+  margin-bottom: 120px;
+  padding: 0 50px;
+}
+
+.news-insights-content {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.news-insights-left {
+  flex: 0 0 525px;
+  height: 530px;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-insights-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.news-insights-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a1a1a;
+  color: #00bcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.news-insights-right {
+  flex: 1;
+  max-width: 794px;
+}
+
+.news-insights-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.news-insights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.news-insights-list li {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0 0 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.news-insights-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.read-more {
+  margin-top: 32px;
+}
+
+.read-more-button {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  background-color: #FF6A00;
+  border: 3px solid #FF6A00;
+  border-radius: 25px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.read-more-button:hover {
+  background-color: transparent;
+  color: #FF6A00;
+}
+
+
+
+
+
+/* 响应式设计 */
+@media (max-width: 1440px) {
+  .news-container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .news-updates-content,
+  .news-insights-content {
+    flex-direction: column;
+  }
+
+  .news-updates-left,
+  .news-updates-right,
+  .news-insights-left,
+  .news-insights-right {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .news-updates-right,
+  .news-insights-left {
+    height: 400px;
+  }
+
+  .news-insights-section {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-page {
+    padding-top: 120px;
+  }
+  
+  .news-container {
+    padding: 0 30px;
+  }
+  
+  .news-title {
+    font-size: 42px;
+  }
+  
+  .news-title-line {
+    width: 300px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .news-updates-section,
+  .news-insights-section {
+    margin-bottom: 80px;
+    padding: 0 10px;
+  }
+
+  .news-updates-text,
+  .news-insights-text {
+    font-size: 14px;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .news-container {
+    padding: 0 20px;
+  }
+  
+  .news-title {
+    font-size: 32px;
+  }
+  
+  .news-title-line {
+    width: 250px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .news-headline {
+    font-size: 20px;
+  }
+  
+  .news-description,
+  .news-updates-text,
+  .news-insights-text {
+    font-size: 14px;
+  }
+} 

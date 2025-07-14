@@ -1,0 +1,204 @@
+.job-details-page {
+  background: #FFFFFF;
+  min-height: 100vh;
+  padding-top: 164px; /* Account for fixed header */
+  padding-bottom: 60px;
+}
+
+.job-details-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* 职位标题 */
+.job-header {
+  padding: 30px 0;
+}
+
+.job-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #1E1E1E;
+  margin: 0;
+}
+
+/* 通用部分样式 */
+.job-section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.29;
+  color: #1E1E1E;
+  margin: 0 0 20px 0;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #828282;
+  margin-bottom: 30px;
+}
+
+/* Job Details 部分 */
+.job-details-content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.job-details-text {
+  flex: 1;
+}
+
+.job-details-text p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  color: #000000;
+  margin: 0 0 20px 0;
+  display: flex;
+}
+
+.job-details-text p strong {
+  display: inline-block;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.job-details-form {
+  flex: 0 0 450px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Description 和 Qualification 部分 */
+.description-content,
+.qualification-content {
+  max-width: 1208px;
+}
+
+.description-content h3,
+.qualification-content h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.29;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.description-content ul,
+.qualification-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.description-content li,
+.qualification-content li {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.29;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.description-content ul ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.description-content ul ul li {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .job-details-content {
+    flex-direction: column;
+  }
+
+  .job-details-form {
+    flex: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-details-page {
+    padding-top: 120px;
+  }
+  
+  .job-details-container {
+    padding: 0 30px;
+  }
+
+  .job-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .job-details-text p {
+    font-size: 18px;
+  }
+
+  .description-content h3,
+  .qualification-content h3 {
+    font-size: 22px;
+  }
+
+  .description-content li,
+  .qualification-content li {
+    font-size: 18px;
+  }
+
+  .description-content ul ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-details-container {
+    padding: 0 20px;
+  }
+
+  .job-title {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .job-details-text p {
+    font-size: 16px;
+  }
+
+  .description-content h3,
+  .qualification-content h3 {
+    font-size: 18px;
+  }
+
+  .description-content li,
+  .qualification-content li {
+    font-size: 16px;
+  }
+
+  .description-content ul ul li {
+    font-size: 14px;
+  }
+} 

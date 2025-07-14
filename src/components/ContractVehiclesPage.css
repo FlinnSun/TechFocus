@@ -1,0 +1,172 @@
+.contract-vehicles-page {
+  background: #FFFFFF;
+  min-height: 100vh;
+  padding-top: 164px; /* Account for fixed header */
+  padding-bottom: 60px;
+}
+
+.contract-vehicles-page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.contract-vehicles-page-header {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.contract-vehicles-page-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.contract-vehicles-title-line {
+  width: 536px;
+  height: 5px;
+  background-color: #FF6A00;
+  margin: 0 auto;
+}
+
+.contract-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+  max-width: 1360px;
+  margin: 0 auto;
+  margin-left: calc(50% - 680px - 80px);
+  margin-right: auto;
+  padding: 0 40px;
+}
+
+.contract-card {
+  width: 439px;
+  height: 387px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.contract-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.blue-card {
+  background-color: #0A3161;
+}
+
+.orange-card {
+  background-color: #FF6A00;
+}
+
+.contract-card h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1440px) {
+  .contract-vehicles-page-container {
+    padding: 0 60px;
+  }
+  
+  .contract-cards {
+    padding: 0 20px;
+    gap: 40px;
+  }
+  
+  .contract-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contract-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .contract-card {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+  }
+  
+  .contract-card h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contract-vehicles-page {
+    padding-top: 120px;
+  }
+  
+  .contract-vehicles-page-container {
+    padding: 0 40px;
+  }
+  
+  .contract-vehicles-page-title {
+    font-size: 48px;
+  }
+  
+  .contract-vehicles-title-line {
+    width: 300px;
+  }
+  
+  .contract-cards {
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .contract-card {
+    height: 250px;
+  }
+  
+  .contract-card h2 {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contract-vehicles-page-container {
+    padding: 0 20px;
+  }
+  
+  .contract-vehicles-page-title {
+    font-size: 36px;
+  }
+  
+  .contract-vehicles-title-line {
+    width: 200px;
+  }
+  
+  .contract-card {
+    height: 200px;
+  }
+  
+  .contract-card h2 {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+} 
