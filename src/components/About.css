@@ -1,13 +1,13 @@
 .about {
   background-color: #ffffff; /* 改回白色背景 */
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   max-width: 1200px; /* 限制内容宽度 */
   margin: 0 auto; /* 居中对齐 */
   padding: 0 20px; /* 添加左右内边距 */
@@ -72,7 +72,7 @@
 .about-text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: left;
@@ -94,7 +94,7 @@
   line-height: 1.6;
   color: #000000;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 10px;
   border-top: 1px solid #e0e0e0;
 }
 

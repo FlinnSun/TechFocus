@@ -45,7 +45,7 @@ const About = () => {
               As a leading provider of technology products, TechFocus has become a trusted source for IT hardware products and solutions. We offer a comprehensive range of electronic and hardware items, such as computers, monitors, peripheral products, and networking equipment, making it easy for customers to acquire the technology they need.
             </p>
             <p className="about-mission">
-              Our mission is to exceed our government customers' expectations while maintaining an unparalleled level of service in the professional services industry.
+              Our mission is to exceed our government customers&apos; expectations while maintaining an unparalleled level of service in the professional services industry.
             </p>
           </div>
         </div>
