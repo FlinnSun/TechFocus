@@ -182,7 +182,7 @@
   font-size: 18px;
 }
 
-/* 团队区域 */
+/* 团队区域 - 改为与MISSION AND VISION相同格式 */
 .about-teams-section {
   display: flex;
   min-height: 500px;
@@ -192,8 +192,38 @@
 
 .teams-left {
   flex: 1;
+  background: #FF9A5B;
+  padding: 60px 50px;
+  color: #FFFFFF;
+}
+
+.teams-left h2 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+}
+
+.teams-left p {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.teams-left p:last-child {
+  margin-bottom: 0;
+}
+
+.teams-right {
+  flex: 1;
   position: relative;
-  background: #2a2a2a;
+  background: #b3d9ff;
   overflow: hidden;
 }
 
@@ -210,44 +240,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2a2a2a;
-  color: #ff6b9d;
+  background: #b3d9ff;
+  color: #0066cc;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
   font-size: 18px;
-}
-
-.teams-right {
-  flex: 1;
-  background: #8FA8B8;
-  padding: 60px 50px;
-  color: #FFFFFF;
-}
-
-.teams-right h2 {
-  font-family: 'Times New Roman', serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.3;
-  color: #FFFFFF;
-  margin: 0 0 30px 0;
-  letter-spacing: 2px;
-}
-
-.teams-right p {
-  font-family: 'Times New Roman', serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #FFFFFF;
-  margin: 0 0 20px 0;
-}
-
-.teams-right p:last-child {
-  margin-bottom: 0;
 }
 
 /* 底部美国国会大厦区域 */
@@ -290,6 +290,80 @@
   font-family: 'Times New Roman', serif;
   font-weight: 500;
   font-size: 18px;
+}
+
+/* 新增卡片区域样式 - 完全复制OVERVIEW结构 */
+.about-new-section {
+  display: flex;
+  min-height: 500px;
+  background: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.new-left {
+  flex: 1;
+  position: relative;
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.new-visual-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.1); /* 放大图片 */
+  transition: transform 0.3s ease;
+}
+
+.new-visual-image:hover {
+  transform: scale(1.15); /* 悬停时进一步放大 */
+}
+
+.new-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a1a1a;
+  color: #00bcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.new-right {
+  flex: 1;
+  background: #8FA8B8;
+  padding: 60px 50px;
+  color: #FFFFFF;
+}
+
+.new-right h2 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+}
+
+.new-right p {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.new-right p:last-child {
+  margin-bottom: 0;
 }
 
 /* 响应式设计 */
@@ -388,6 +462,29 @@
   
   .capitol-placeholder {
     height: 220px;
+  }
+
+  .about-new-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .new-left {
+    height: 300px;
+  }
+  
+  .new-right {
+    padding: 40px 30px;
+  }
+  
+  .new-right h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .new-right p {
+    font-size: 16px;
+    margin-bottom: 15px;
   }
 }
 

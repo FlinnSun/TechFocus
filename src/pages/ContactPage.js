@@ -144,6 +144,10 @@ const ContactPage = () => {
                   7501 Salvia St.<br/>
                   Arvada, CO 80007
                 </p>
+                <div className="office-images">
+                  <img src="/images/v.png" alt="Office Image 1" className="office-image" />
+                  <img src="/images/v2.jpg" alt="Office Image 2" className="office-image" />
+                </div>
               </div>
             </div>
           </div>

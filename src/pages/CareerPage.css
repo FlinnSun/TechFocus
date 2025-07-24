@@ -59,7 +59,7 @@
 /* Benefits section 单独设置，不拉伸高度 */
 .career-benefits-content {
   display: flex;
-  align-items: flex-start; /* 顶部对齐，图片保持自然高度 */
+  align-items: stretch; /* 改为stretch使子元素等高 */
   gap: 60px;
   margin-bottom: 80px;
 }
@@ -148,15 +148,22 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   margin: 0; /* 确保没有额外的外边距 */
   padding: 0; /* 确保没有内边距 */
+  display: flex; /* 添加flex布局 */
+  flex-direction: column; /* 垂直方向 */
+  min-height: 400px; /* 确保最小高度 */
 }
 
 .career-benefits-image {
   width: 100%;
-  height: auto;
+  height: 100%; /* 改为100%填充整个容器 */
+  object-fit: cover; /* 保持比例填充 */
+  object-position: center; /* 图片居中显示 */
   display: block;
   margin: 0; /* 移除图片的默认外边距 */
   padding: 0; /* 移除图片的内边距 */
   vertical-align: top; /* 避免行内元素底部空白 */
+  flex: 1; /* 让图片占据所有可用空间 */
+  min-height: 100%; /* 确保填满容器 */
 }
 
 .career-benefits-right {

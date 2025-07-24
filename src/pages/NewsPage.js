@@ -11,8 +11,6 @@ const NewsPage = () => {
           <div className="news-title-line"></div>
         </div>
 
-
-
         {/* Corporate Experience */}
         <div className="news-updates-section">
           <h2 className="section-title">Corporate Experience</h2>
@@ -22,14 +20,11 @@ const NewsPage = () => {
             <div className="news-updates-left">
               <p className="news-updates-text">
                 TechFocus has successfully won and executed multiple federal contracts through our GSA Schedule and competitive procurement channels. We specialize in delivering compliant, high-quality IT hardware and technology solutions that meet the demands of mission-critical environments.
-              </p>
-              <p className="news-updates-text">
+              </p><p className="news-updates-text">
                 Our clients include a wide range of federal agencies, such as the Department of the Air Force, Navy, Army, Department of Veterans Affairs (VA), U.S. Department of Agriculture (USDA), and the Department of State (DOS), among others.
-              </p>
-              <p className="news-updates-text">
+              </p><p className="news-updates-text">
                 Now in our third year of federal contracting, TechFocus has exceeded $10 million in cumulative government sales, demonstrating our ability to perform reliably, scale effectively, and support diverse federal needs.
-              </p>
-              <p className="news-updates-text">
+              </p><p className="news-updates-text">
                 Our team brings deep knowledge of the federal acquisition process, and we are committed to consistent, responsive, and accountable contract performance.
               </p>
             </div>
@@ -88,9 +83,6 @@ const NewsPage = () => {
             </div>
           </div>
         </div>
-
-
-
 
       </div>
     </div>

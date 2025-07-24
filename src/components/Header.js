@@ -7,29 +7,12 @@ const Header = () => {
   const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleDropdownMouseEnter = () => {
+  const handleMouseEnter = () => {
     setIsDropdownOpen(true);
   };
 
-  const handleDropdownMouseLeave = () => {
+  const handleMouseLeave = () => {
     setIsDropdownOpen(false);
-  };
-
-  const handleDropdownFocus = () => {
-    setIsDropdownOpen(true);
-  };
-
-  const handleDropdownBlur = (e) => {
-    // 检查焦点是否仍在下拉菜单内
-    if (!e.currentTarget.contains(e.relatedTarget)) {
-      setIsDropdownOpen(false);
-    }
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.key === 'Escape') {
-      setIsDropdownOpen(false);
-    }
   };
 
   return (
@@ -42,41 +25,18 @@ const Header = () => {
               <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About</Link></li>
               <li 
                 className="nav-item dropdown"
-                onMouseEnter={handleDropdownMouseEnter}
-                onMouseLeave={handleDropdownMouseLeave}
-                onFocus={handleDropdownFocus}
-                onBlur={handleDropdownBlur}
-                onKeyDown={handleKeyDown}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
-                <button 
-                  className={`nav-link dropdown-toggle ${location.pathname === '/solution' || location.pathname === '/hardware' ? 'active' : ''}`}
-                  aria-expanded={isDropdownOpen}
-                  aria-haspopup="true"
-                >
-                  Solution
-                </button>
-                <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-                  <li>
-                    <Link 
-                      to="/solution" 
-                      className="dropdown-item"
-                      onClick={() => setIsDropdownOpen(false)}
-                    >
-                      IT Service
-                    </Link>
-                  </li>
-                  <li>
-                    <Link 
-                      to="/hardware" 
-                      className="dropdown-item"
-                      onClick={() => setIsDropdownOpen(false)}
-                    >
-                      Hardware
-                    </Link>
-                  </li>
+                <span className="nav-link dropdown-toggle">Capability</span>
+                {isDropdownOpen && (
+                  <ul className="dropdown-menu">
+                    <li><Link to="/solution" className="dropdown-item">IT Service</Link></li>
+                    <li><Link to="/hardware" className="dropdown-item">Products</Link></li>
                 </ul>
+                )}
               </li>
-              <li><Link to="/contract-vehicles">Contract vehicles</Link></li>
+              <li><Link to="/contract-vehicles" className={location.pathname === '/contract-vehicles' ? 'active' : ''}>Contract vehicles</Link></li>
               <li><Link to="/careers" className={location.pathname === '/careers' ? 'active' : ''}>Careers</Link></li>
               <li><Link to="/news" className={location.pathname === '/news' ? 'active' : ''}>News</Link></li>
             </ul>

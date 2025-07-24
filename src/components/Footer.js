@@ -24,27 +24,8 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          
-          <div className="footer-section">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#solution">Solution</a></li>
-              <li><a href="#contract">Contract vehicels</a></li>
-              <li><a href="#careers">Career</a></li>
-              <li><a href="#news">News</a></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
-            <h4>Primary Service</h4>
-            <ul>
-              <li><a href="#">Data Analytics & AI/ML</a></li>
-              <li><a href="#">Cloud & Infrastructure Engineering</a></li>
-              <li><a href="#">Cybersecurity</a></li>
-              <li><a href="#">Agile Software Development</a></li>
-              <li><a href="#">IT Support Services</a></li>
-            </ul>
+          <div className="footer-logo">
+            <img src="/images/WechatIMG46.svg" alt="TechFocus Logo" />
           </div>
         </div>
         

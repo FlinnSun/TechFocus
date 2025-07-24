@@ -58,19 +58,6 @@ const SolutionPage = () => {
         "· Legacy System Modernization"
       ],
       textStyle: "times-text"
-    },
-    {
-      id: 5,
-      title: "IT Support Services",
-      image: "/images/software.jpg",
-      subtitle: "Reliable, responsive support for end users and mission systems.",
-      description: [
-        "· Tier 1-3 Help Desk Support",
-        "· NOC Services and Remote Monitoring",
-        "· Asset Management and ITIL/ITSM Service Delivery",
-        "· VIP Executive Support"
-      ],
-      textStyle: "times-text"
     }
   ];
 
@@ -130,13 +117,8 @@ const SolutionPage = () => {
                       <span className="button-symbol">→</span>
                       <span className="button-text">Learn more</span>
                     </Link>
-                  ) : service.id === 4 ? (
-                    <Link to="/dd4" className="service-button">
-                      <span className="button-symbol">→</span>
-                      <span className="button-text">Learn more</span>
-                    </Link>
                   ) : (
-                    <Link to="/dd5" className="service-button">
+                    <Link to="/dd4" className="service-button">
                       <span className="button-symbol">→</span>
                       <span className="button-text">Learn more</span>
                     </Link>

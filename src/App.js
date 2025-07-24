@@ -15,7 +15,7 @@ import DD4Page from './pages/DD4Page';
 import DD5Page from './pages/DD5Page';
 import SBA8aPage from './pages/SBA8aPage';
 import EDSOBPage from './pages/EDSOBPage';
-import GASMASPage from './pages/GASMASPage';
+
 import CareerPage from './pages/CareerPage';
 import JobsPage from './pages/JobsPage';
 import JobDetailsPage from './pages/JobDetailsPage';
@@ -39,7 +39,7 @@ function AppContent() {
           <Route path="/dd5" element={<DD5Page />} />
           <Route path="/sba8a" element={<SBA8aPage />} />
           <Route path="/edsob" element={<EDSOBPage />} />
-          <Route path="/gasmas" element={<GASMASPage />} />
+
           <Route path="/careers" element={<CareerPage />} />
           <Route path="/jobs" element={<JobsPage />} />
           <Route path="/job-details" element={<JobDetailsPage />} />

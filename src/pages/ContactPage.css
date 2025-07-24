@@ -134,6 +134,20 @@
   margin: 0;
 }
 
+.office-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.office-image {
+  width: 240px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* 右侧表单区域 */
 .contact-form-section {
   flex: 1;

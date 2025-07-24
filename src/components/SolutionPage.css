@@ -177,15 +177,15 @@
 .times-text .service-subtitle,
 .times-text .service-detail-item {
   font-family: 'Times New Roman', serif;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 1.14990234375;
 }
 
 .times-text-large .service-subtitle,
 .times-text-large .service-detail-item {
   font-family: 'Times New Roman', serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 32px;
   line-height: 1.14990234375;
 }
