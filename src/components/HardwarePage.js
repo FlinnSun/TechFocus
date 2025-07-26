@@ -104,7 +104,7 @@ const HardwarePage = () => {
 
             <div className="category-card">
               <div className="category-image">
-                <img src="/images/p4.png" alt="Additional Hardware & Accessories" />
+                <img src="/images/p4.jpg" alt="Additional Hardware & Accessories" />
               </div>
               <div className="category-content">
                 <h3>Additional Hardware & Accessories</h3>

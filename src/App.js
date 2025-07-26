@@ -6,7 +6,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import SolutionPage from './components/SolutionPage';
 import HardwarePage from './components/HardwarePage';
-import ContractVehiclesPage from './components/ContractVehiclesPage';
+
 import Footer from './components/Footer';
 import DataAnalyticsDetailsPage from './pages/DataAnalyticsDetailsPage';
 import DD2Page from './pages/DD2Page';
@@ -31,7 +31,7 @@ function AppContent() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/solution" element={<SolutionPage />} />
           <Route path="/hardware" element={<HardwarePage />} />
-          <Route path="/contract-vehicles" element={<ContractVehiclesPage />} />
+
           <Route path="/data-analytics-details" element={<DataAnalyticsDetailsPage />} />
           <Route path="/dd2" element={<DD2Page />} />
           <Route path="/dd3" element={<DD3Page />} />

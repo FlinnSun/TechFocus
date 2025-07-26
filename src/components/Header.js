@@ -36,7 +36,7 @@ const Header = () => {
                 </ul>
                 )}
               </li>
-              <li><Link to="/contract-vehicles" className={location.pathname === '/contract-vehicles' ? 'active' : ''}>Contract vehicles</Link></li>
+
               <li><Link to="/careers" className={location.pathname === '/careers' ? 'active' : ''}>Careers</Link></li>
               <li><Link to="/news" className={location.pathname === '/news' ? 'active' : ''}>News</Link></li>
             </ul>

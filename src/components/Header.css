@@ -20,7 +20,7 @@
 .nav {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0 40px;
 }
 
@@ -36,7 +36,7 @@
 .nav-list a {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.5;
   color: #000000;
   text-decoration: none;
@@ -72,7 +72,7 @@
 .nav-link.dropdown-toggle {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.5;
   color: #000000;
   text-decoration: none;
@@ -124,7 +124,7 @@
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 17px;
   transition: background-color 0.3s ease;
 }
 
@@ -139,11 +139,11 @@
   }
   
   .nav-list a {
-    font-size: 14px;
+    font-size: 17px;
   }
   
   .nav-link.dropdown-toggle {
-    font-size: 14px;
+    font-size: 17px;
   }
   
   .dropdown-item {
@@ -161,21 +161,21 @@
   .nav {
     margin: 0;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
   }
   
   .nav-list {
     flex-wrap: wrap;
     gap: 16px;
-    justify-content: center;
+    justify-content: flex-end;
   }
   
   .nav-list a {
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .nav-link.dropdown-toggle {
-    font-size: 12px;
+    font-size: 15px;
   }
   
   .dropdown-menu {
