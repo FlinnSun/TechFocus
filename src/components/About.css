@@ -13,55 +13,58 @@
   padding: 0 20px; /* 添加左右内边距 */
 }
 
-/* 图片展示区域 - 直接在白色背景上显示 */
+/* 图片展示区域 - 自适应高度 */
 .about-hero-area {
   width: 100vw; /* 占满视口宽度 */
   margin-left: calc(-50vw + 50%); /* 突破容器限制，扩展到全屏 */
-  height: 400px; /* 设置固定高度 */
+  height: auto; /* 自适应高度 */
+  min-height: 0; /* 移除最小高度限制 */
   background-color: transparent; /* 移除灰色背景，使用透明背景 */
-  margin-bottom: 30px; /* 与下方文字的间距调小至1/2 */
+  margin-top: -35px; /* 向上移动40px */
+  margin-bottom: 5px; /* 与下方文字的间距改为5px */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-/* 图片容器 - 移除背景 */
+/* 图片容器 - 移除边框 */
 .image-container {
   width: 100%; /* 占用区域的全部宽度 */
   height: 100%; /* 占用区域的全部高度 */
-  padding: 10px; /* 保持适当内边距 */
+  padding: 5px; /* 改为5px内边距 */
+  border: none; /* 移除边框 */
+  background-color: transparent; /* 移除背景色 */
 }
 
-/* 桌面端网格模式 - 四张图片并排显示，无背景容器 */
+/* 桌面端网格模式 - 四张图片并排显示，自适应高度 */
 .grid-mode {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 四列等宽 */
   gap: 15px; /* 图片间距 */
-  height: 100%;
-  align-items: center;
+  height: auto; /* 自适应高度 */
+  align-items: stretch; /* 让所有项目拉伸到相同高度 */
   padding: 20px; /* 内边距 */
 }
 
 .image-item {
-  height: 100%;
+  height: auto; /* 自适应高度，贴合图片 */
+  min-height: 0; /* 移除最小高度限制 */
   background-color: transparent; /* 移除背景色 */
-  border-radius: 0; /* 移除圆角 */
+  border: none; /* 移除边框 */
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0; /* 移除内边距 */
+  padding: 0; /* 移除内边距，让容器完全贴合图片 */
 }
 
 .image-item img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
-  object-fit: contain; /* 确保图片完全显示，不裁剪 */
+  object-fit: cover; /* 让图片填充整个容器 */
   transition: transform 0.3s ease;
-  border-radius: 0; /* 移除图片圆角 */
+  border-radius: 0; /* 移除圆角 */
 }
 
 .image-item:hover img {
@@ -101,8 +104,10 @@
 /* 响应式设计 */
 @media (max-width: 1024px) {
   .about-hero-area {
-    height: 320px; /* 平板端减小高度 */
-    margin-bottom: 25px; /* 调小至1/2 */
+    height: auto; /* 自适应高度 */
+    min-height: 0; /* 移除最小高度限制 */
+    margin-top: -35px; /* 向上移动40px */
+    margin-bottom: 5px; /* 改为5px */
   }
   
   .grid-mode {
@@ -112,7 +117,7 @@
   }
   
   .image-container {
-    padding: 8px; /* 减少外层内边距 */
+    padding: 5px; /* 改为5px内边距 */
   }
   
   .about-description,
@@ -123,8 +128,10 @@
 
 @media (max-width: 768px) {
   .about-hero-area {
-    height: 300px; /* 移动端高度，给2x2布局更多空间 */
-    margin-bottom: 20px; /* 调小至1/2 */
+    height: auto; /* 自适应高度 */
+    min-height: 0; /* 移除最小高度限制 */
+    margin-top: -35px; /* 向上移动40px */
+    margin-bottom: 5px; /* 改为5px */
   }
   
   .grid-mode {
@@ -134,7 +141,7 @@
   }
   
   .image-container {
-    padding: 8px;
+    padding: 5px;
   }
   
   .about-description,
@@ -149,8 +156,10 @@
 
 @media (max-width: 480px) {
   .about-hero-area {
-    height: 280px; /* 小屏幕高度 */
-    margin-bottom: 15px; /* 调小至1/2 */
+    height: auto; /* 自适应高度 */
+    min-height: 0; /* 移除最小高度限制 */
+    margin-top: -35px; /* 向上移动40px */
+    margin-bottom: 5px; /* 改为5px */
   }
   
   .grid-mode {
@@ -160,7 +169,7 @@
   }
   
   .image-container {
-    padding: 5px; /* 最小外层内边距 */
+    padding: 5px; /* 统一为5px内边距 */
   }
   
   .about {

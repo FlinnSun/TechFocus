@@ -22,14 +22,14 @@
   letter-spacing: -2%;
   text-align: left; /* 改为左对齐 */
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .section-line {
   width: 121px;
   height: 5px;
   background-color: #FF6A00;
-  margin: 0 0 20px 0; /* 改为左对齐，距离缩小到原来的1/2 */
+  margin: 0 0 5px 0; /* 改为左对齐，距离缩小到5px */
 }
 
 .btn {
