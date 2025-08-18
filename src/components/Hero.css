@@ -29,6 +29,17 @@
   z-index: -2;
 }
 
+/* 图片背景样式 */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 确保图片覆盖整个区域 */
+  z-index: -2;
+}
+
 /* 视频覆盖层（可选，用于调整视频亮度/对比度） */
 .hero-video-overlay {
   position: absolute;
@@ -40,12 +51,27 @@
   z-index: -1;
 }
 
+/* 图片覆盖层（可选，用于调整图片亮度/对比度） */
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* 半透明黑色覆盖层，让文字更清晰 */
+  z-index: -1;
+}
+
 .hero-content {
-  text-align: center;
-  max-width: 844px;
-  padding: 0 20px;
-  position: relative;
-  z-index: 1; /* 确保内容在视频上方 */
+  /* 将文案固定在容器最右侧的可视区域 */
+  position: absolute;
+  right: 60px; /* 与右侧保持留白 */
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  max-width: 844px; /* 控制行宽，避免过长 */
+  padding: 0; /* 去掉额外内边距，贴近右侧黑色区域 */
+  z-index: 1; /* 确保内容在背景上方 */
 }
 
 .hero-title {

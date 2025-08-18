@@ -7,7 +7,7 @@ const Logo = () => {
   const location = useLocation();
   
   // 配置选项
-  const logoImagePath = '/images/logo.svg'; // SVG 图片路径
+  const logoImagePath = '/images/logoFont02.svg'; // SVG 图片路径
   const useImageLogo = true; // 设置为 true 使用图片文件
   const useCustomSVG = false; // 设置为 true 使用自定义 SVG 代码
 

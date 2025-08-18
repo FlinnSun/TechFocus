@@ -5,14 +5,14 @@ import './Header.css';
 
 const Header = () => {
   const location = useLocation();
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [capabilitiesDropdownOpen, setCapabilitiesDropdownOpen] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsDropdownOpen(true);
+  const handleCapabilitiesMouseEnter = () => {
+    setCapabilitiesDropdownOpen(true);
   };
 
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
+  const handleCapabilitiesMouseLeave = () => {
+    setCapabilitiesDropdownOpen(false);
   };
 
   return (
@@ -22,27 +22,26 @@ const Header = () => {
           <Logo />
           <nav className="nav">
             <ul className="nav-list">
-              <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About</Link></li>
+              <li><Link to="/company" className={location.pathname === '/company' ? 'active' : ''}>Company</Link></li>
               <li 
                 className="nav-item dropdown"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                onMouseEnter={handleCapabilitiesMouseEnter}
+                onMouseLeave={handleCapabilitiesMouseLeave}
               >
-                <span className="nav-link dropdown-toggle">Capability</span>
-                {isDropdownOpen && (
+                <span className="nav-link dropdown-toggle">Capabilities</span>
+                {capabilitiesDropdownOpen && (
                   <ul className="dropdown-menu">
                     <li><Link to="/solution" className="dropdown-item">IT Service</Link></li>
-                    <li><Link to="/hardware" className="dropdown-item">Products</Link></li>
+                    <li><Link to="/hardware" className="dropdown-item">IT Products & Hardware</Link></li>
                 </ul>
                 )}
               </li>
 
               <li><Link to="/careers" className={location.pathname === '/careers' ? 'active' : ''}>Careers</Link></li>
-              <li><Link to="/news" className={location.pathname === '/news' ? 'active' : ''}>News</Link></li>
             </ul>
           </nav>
           <Link to="/contact" className="btn btn-primary">
-            Contract
+            Contact
           </Link>
         </div>
       </div>

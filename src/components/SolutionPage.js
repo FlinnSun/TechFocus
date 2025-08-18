@@ -22,7 +22,7 @@ const SolutionPage = () => {
     {
       id: 2,
       title: "Cloud & Infrastructure Engineering", 
-      image: "/images/2.jpg",
+      image: "/images/s2.jpg",
       subtitle: "Secure cloud adoption and modernized infrastructure.",
       description: [
         "· Cloud Readiness & Migration (AWS, Azure, milCloud)",

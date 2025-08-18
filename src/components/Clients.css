@@ -4,20 +4,17 @@
   position: relative;
 }
 
-/* 简化的轮播容器 */
-.clients-carousel {
-  position: relative;
+/* 固定的5*3网格容器 */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 40px;
   margin-top: 60px;
-}
-
-/* 简化的客户logo行 - 适应4个logo */
-.clients-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px; /* 减少间距以适应4个logo */
   padding: 40px 0;
-  min-height: 280px; /* 确保有足够高度 */
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 圆形客户logo */
@@ -52,76 +49,12 @@
   transform: scale(1.1);
 }
 
-/* 控制按钮 */
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 10;
-}
 
-.carousel-control:hover {
-  background-color: rgba(255, 255, 255, 1);
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-control.prev {
-  left: 20px;
-}
-
-.carousel-control.next {
-  right: 20px;
-}
-
-.carousel-control svg {
-  color: #333;
-}
-
-/* 指示器 */
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 40px;
-  position: relative;
-  z-index: 10;
-}
-
-.indicator {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: none;
-  background-color: #d0d0d0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.indicator.active {
-  background-color: #FF6A00;
-  transform: scale(1.3);
-}
-
-.indicator:hover {
-  background-color: #FF6A00;
-}
 
 /* 响应式设计 */
 @media (max-width: 1024px) {
-  .clients-row {
-    gap: 40px; /* 进一步减少间距 */
+  .clients-grid {
+    gap: 30px;
     padding: 30px 0;
   }
   
@@ -129,71 +62,30 @@
     width: 140px; /* 平板端减小尺寸 */
     height: 140px;
   }
-  
-  .carousel-control {
-    width: 45px;
-    height: 45px;
-  }
-  
-  .carousel-control.prev {
-    left: 15px;
-  }
-  
-  .carousel-control.next {
-    right: 15px;
-  }
 }
 
 @media (max-width: 768px) {
-  .clients-row {
-    gap: 20px; /* 移动端小间距 */
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 25px;
     padding: 20px 0;
-    flex-wrap: wrap; /* 允许换行 */
-    justify-content: center;
   }
   
   .client-logo {
     width: 120px; /* 移动端更小尺寸 */
     height: 120px;
   }
-  
-  .carousel-control {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .carousel-control.prev {
-    left: 10px;
-  }
-  
-  .carousel-control.next {
-    right: 10px;
-  }
 }
 
 @media (max-width: 480px) {
-  .clients-row {
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap; /* 小屏幕允许2x2布局 */
+  .clients-grid {
+    gap: 20px;
+    padding: 15px 0;
   }
   
   .client-logo {
     width: 100px; /* 小屏幕尺寸 */
     height: 100px;
-  }
-  
-  .carousel-control {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .carousel-indicators {
-    margin-top: 30px;
-  }
-  
-  .indicator {
-    width: 10px;
-    height: 10px;
   }
 } 

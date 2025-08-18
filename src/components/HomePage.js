@@ -1,8 +1,9 @@
 import React from 'react';
 import Hero from './Hero';
 import About from './About';
-
-import Clients from './Clients';
+import ServicesSection from './ServicesSection';
+import Customers from './Clients';
+import KPISection from './KPISection';
 
 
 const HomePage = () => {
@@ -10,9 +11,9 @@ const HomePage = () => {
     <div className="homepage">
       <Hero />
       <About />
-
-      <Clients />
-
+      <ServicesSection />
+      <Customers />
+      <KPISection />
     </div>
   );
 };

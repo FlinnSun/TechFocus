@@ -1,0 +1,373 @@
+/* Services Section - 基于SolutionPage样式但去掉标题 */
+.services-section {
+  position: relative;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+.services-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+}
+
+/* 服务列表区域 */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 80px 0 100px 0;
+}
+
+/* 单个服务卡片 */
+.service-card {
+  position: relative;
+  width: 100%;
+  min-height: 590px;
+}
+
+/* 服务背景矩形 */
+.service-background {
+  position: absolute;
+  width: 880px;
+  height: 544px;
+  background: #D9D9D9;
+  opacity: 0.5;
+  border-radius: 0px;
+  z-index: 1;
+}
+
+/* 装饰线条 - 现在使用标题的伪元素 */
+.service-line {
+  display: none;
+}
+
+/* 服务内容容器 */
+.service-content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 590px;
+  z-index: 3;
+  padding-top: 40px;
+}
+
+/* 图片容器 */
+.service-image-container {
+  position: relative;
+  width: 628px;
+  height: 569px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #3885B8 0%, #0A3161 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 服务信息区域 */
+.service-info {
+  flex: 1;
+  padding: 60px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 650px;
+}
+
+.service-title {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2102272245619032;
+  letter-spacing: -2%;
+  color: #000000;
+  margin: 0;
+  position: relative;
+}
+
+.service-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #FF6A00;
+  z-index: 2;
+}
+
+/* 服务描述容器 */
+.service-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-subtitle {
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2102272510528564;
+  white-space: pre-line;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-detail-item {
+  margin: 0;
+  color: #000000;
+}
+
+/* 不同文本样式类 */
+
+.times-text .service-subtitle,
+.times-text .service-detail-item {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.14990234375;
+}
+
+.times-text-large .service-subtitle,
+.times-text-large .service-detail-item {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.14990234375;
+}
+
+/* Learn more 按钮 */
+.service-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 4px 10px;
+  background: transparent;
+  border: 1px solid #0A3161;
+  border-radius: 40px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3333333333333333;
+  letter-spacing: -1.53%;
+  color: #0A3161;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 153px;
+  height: 43px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  margin-top: -20px;
+}
+
+.service-button:hover {
+  background: #0A3161;
+  color: #FFFFFF;
+}
+
+.button-symbol {
+  color: #007AFF;
+  font-size: 15px;
+}
+
+.button-text {
+  color: inherit;
+}
+
+/* 奇数服务：图片在左，文字在右 */
+.service-card:nth-child(odd) .service-background {
+  left: 36%;
+}
+
+.service-card:nth-child(odd) .service-content {
+  flex-direction: row;
+}
+
+.service-card:nth-child(odd) .service-image-container {
+  margin-right: 60px;
+  margin-left: 63px;
+}
+
+.service-card:nth-child(odd) .service-info {
+  margin-top: -60px;
+}
+
+/* 偶数服务：文字在左，图片在右 */
+.service-card:nth-child(even) .service-background {
+  right: 36%;
+}
+
+.service-card:nth-child(even) .service-content {
+  flex-direction: row-reverse;
+}
+
+.service-card:nth-child(even) .service-image-container {
+  margin-left: 60px;
+  margin-right: 63px;
+}
+
+.service-card:nth-child(even) .service-info {
+  margin-left: 60px;
+  margin-top: -60px;
+}
+
+/* 确保第二个服务的标题在同一行显示 */
+.service-card:nth-child(2) .service-title {
+  white-space: nowrap;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .services-list {
+    gap: 80px;
+  }
+
+  .service-image-container {
+    width: 500px;
+    height: 480px;
+  }
+
+  .service-info {
+    padding: 20px 30px;
+  }
+
+  .service-title {
+    font-size: 28px;
+  }
+
+  .times-text .service-subtitle,
+  .times-text .service-detail-item {
+    font-size: 20px;
+  }
+
+  .times-text-large .service-subtitle,
+  .times-text-large .service-detail-item {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    padding: 0 20px;
+  }
+
+  .services-list {
+    gap: 60px;
+    padding: 40px 0 60px 0;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .service-background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .service-line {
+    display: none;
+  }
+
+  .service-content {
+    flex-direction: column !important;
+    min-height: auto;
+    padding-top: 0;
+  }
+
+  .service-card:nth-child(odd) .service-image-container,
+  .service-card:nth-child(even) .service-image-container {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 0 30px 0;
+  }
+
+  .service-info {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .service-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .times-text .service-subtitle,
+  .times-text .service-detail-item {
+    font-size: 16px;
+  }
+
+  .times-text-large .service-subtitle,
+  .times-text-large .service-detail-item {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-list {
+    gap: 40px;
+    padding: 30px 0 40px 0;
+  }
+
+  .service-image-container {
+    height: 250px;
+  }
+
+  .service-info {
+    gap: 16px;
+  }
+
+  .service-title {
+    font-size: 20px;
+  }
+
+  .times-text .service-subtitle,
+  .times-text .service-detail-item,
+  .times-text-large .service-subtitle,
+  .times-text-large .service-detail-item {
+    font-size: 14px;
+  }
+
+  .service-button {
+    width: 120px;
+    height: 36px;
+    font-size: 13px;
+  }
+} 

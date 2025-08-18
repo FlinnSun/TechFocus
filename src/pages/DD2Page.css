@@ -265,7 +265,7 @@ html, body, .dd2-root {
   left: 0;
   width: 100vw;
   height: 600px;              /* 增加高度以完全显示图片 */
-  background: url('../../public/images/2.jpg') no-repeat center center;
+  background: url('../../public/images/s2.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;

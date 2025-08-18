@@ -9,8 +9,14 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-info">
-              <p>TechFocus LLC.© 2025</p>
-              <p>All rights reserved.English</p>
+              <p><span className="orange-text">Always</span> Advancing</p>
+              <p className="footer-mission">Our mission is to exceed our government customers' expectations while maintaining an unparalleled level of service.</p>
+              <div className="footer-vertical-line"></div>
+              <div className="footer-nav-links">
+                <div className="footer-nav-item">Company</div>
+                <div className="footer-nav-item">Capabilities</div>
+                <div className="footer-nav-item">Careers</div>
+              </div>
             </div>
             <div className="footer-social">
               <a href="https://www.linkedin.com/company/techfocus-llc/" className="social-link" target="_blank" rel="noopener noreferrer">
@@ -25,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-logo">
-            <img src="/images/WechatIMG46.svg" alt="TechFocus Logo" />
+            <img src="/images/WechatIMG46.jpg" alt="TechFocus Logo" />
           </div>
         </div>
         

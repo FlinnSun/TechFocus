@@ -1,0 +1,181 @@
+/* KPI Section Styles */
+.kpi-section {
+  background: #0A3161;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.kpi-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.kpi-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+  background: #0A3161;
+  border-radius: 0;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+  min-height: 250px;
+  width: 100%;
+}
+
+.kpi-card:hover {
+  transform: translateY(-5px);
+}
+
+.kpi-value {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.kpi-blue {
+  color: #3B82F6;
+}
+
+.kpi-orange {
+  color: #FF6A00;
+}
+
+.kpi-red {
+  color: #EF4444;
+}
+
+.kpi-line {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.kpi-line-blue {
+  background: #3B82F6;
+}
+
+.kpi-line-orange {
+  background: #FF6A00;
+}
+
+.kpi-line-red {
+  background: #EF4444;
+}
+
+.kpi-label {
+  text-align: center;
+  width: 100%;
+}
+
+.kpi-title {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.kpi-subtitle {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .kpi-container {
+    padding: 0 30px;
+    gap: 20px;
+  }
+  
+  .kpi-card {
+    padding: 25px 15px;
+  }
+  
+  .kpi-value {
+    font-size: 40px;
+  }
+  
+  .kpi-title {
+    font-size: 16px;
+  }
+  
+  .kpi-subtitle {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kpi-section {
+    padding: 60px 0;
+  }
+  
+  .kpi-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .kpi-card {
+    padding: 30px 20px;
+  }
+  
+  .kpi-value {
+    font-size: 36px;
+  }
+  
+  .kpi-title {
+    font-size: 18px;
+  }
+  
+  .kpi-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-section {
+    padding: 40px 0;
+  }
+  
+  .kpi-container {
+    padding: 0 15px;
+    gap: 15px;
+  }
+  
+  .kpi-card {
+    padding: 25px 15px;
+  }
+  
+  .kpi-value {
+    font-size: 32px;
+  }
+  
+  .kpi-title {
+    font-size: 16px;
+  }
+  
+  .kpi-subtitle {
+    font-size: 13px;
+  }
+}

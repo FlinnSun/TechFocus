@@ -19,7 +19,7 @@ import EDSOBPage from './pages/EDSOBPage';
 import CareerPage from './pages/CareerPage';
 import JobsPage from './pages/JobsPage';
 import JobDetailsPage from './pages/JobDetailsPage';
-import NewsPage from './pages/NewsPage';
+
 import ContactPage from './pages/ContactPage';
 
 function AppContent() {
@@ -28,7 +28,7 @@ function AppContent() {
       <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/company" element={<AboutPage />} />
           <Route path="/solution" element={<SolutionPage />} />
           <Route path="/hardware" element={<HardwarePage />} />
 
@@ -43,7 +43,7 @@ function AppContent() {
           <Route path="/careers" element={<CareerPage />} />
           <Route path="/jobs" element={<JobsPage />} />
           <Route path="/job-details" element={<JobDetailsPage />} />
-          <Route path="/news" element={<NewsPage />} />
+
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       <Footer />
