@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './AboutPage.css';
+import KPISection from './KPISection';
 
 const AboutPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // 检查 URL 中是否有锚点
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        // 延迟滚动，确保页面已加载
+        setTimeout(() => {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
   return (
     <div className="about-page">
       <div className="about-page-container">
         {/* 页面标题 */}
-        <div className="about-page-header">
+        <div id="about" className="about-page-header">
           <h1 className="about-page-title">About us</h1>
         </div>
         
@@ -103,7 +122,7 @@ const AboutPage = () => {
         </div>
 
         {/* Leadership标题 */}
-        <div className="about-page-header">
+        <div id="leadership" className="about-page-header">
           <h1 className="about-page-title">Leadership</h1>
         </div>
 
@@ -133,8 +152,8 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* 复制的Leadership标题 */}
-        <div className="about-page-header">
+        {/* Contract标题 */}
+        <div id="contract" className="about-page-header">
           <h1 className="about-page-title">Contract</h1>
         </div>
 
@@ -167,21 +186,10 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* 底部美国国会大厦图片 */}
-        <div className="about-capitol-section">
-          <img 
-            src="/images/a4.jpg" 
-            alt="United States Capitol Building"
-            className="capitol-image"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'flex';
-            }}
-          />
-          <div className="image-placeholder capitol-placeholder" style={{display: 'none'}}>
-            <span>US Capitol Building Image</span>
-          </div>
-        </div>
+        {/* KPI Section */}
+        <KPISection />
+
+
       </div>
     </div>
   );

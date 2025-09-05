@@ -24,7 +24,7 @@ const Customers = () => {
   return (
     <section className="clients section" id="clients">
       <div className="container">
-        <h2 className="section-title">Customers</h2>
+        <h2 className="section-title">Clients</h2>
         <div className="section-line"></div>
         
         {/* 固定的4*2网格显示 */}

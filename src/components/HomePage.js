@@ -3,7 +3,6 @@ import Hero from './Hero';
 import About from './About';
 import ServicesSection from './ServicesSection';
 import Customers from './Clients';
-import KPISection from './KPISection';
 
 
 const HomePage = () => {
@@ -13,7 +12,6 @@ const HomePage = () => {
       <About />
       <ServicesSection />
       <Customers />
-      <KPISection />
     </div>
   );
 };

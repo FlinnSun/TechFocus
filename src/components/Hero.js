@@ -1,32 +1,65 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Hero.css';
 
 const Hero = () => {
-  // 图片配置
-  const imagePath = '/images/D.jpg'; // 使用D.jpg图片
-  const useImage = true; // 设置为 true 使用图片背景
-  const [imageLoaded, setImageLoaded] = useState(false);
+  // 视频配置
+  const videoPath = '/videos/herovideo.mp4'; // 使用herovideo.mp4视频
+  const useVideo = true; // 设置为 true 使用视频背景
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const videoRef = useRef(null);
+
+  // 控制视频播放5秒后重新开始
+  useEffect(() => {
+    if (videoRef.current && videoLoaded) {
+      const video = videoRef.current;
+      
+      const handleTimeUpdate = () => {
+        if (video.currentTime >= 5) {
+          video.currentTime = 0; // 重置到开始位置
+        }
+      };
+
+      video.addEventListener('timeupdate', handleTimeUpdate);
+      
+      return () => {
+        video.removeEventListener('timeupdate', handleTimeUpdate);
+      };
+    }
+  }, [videoLoaded]);
 
   return (
     <section className="hero">
               {/* 背景层 */}
         <div className="hero-background">
-          {useImage ? (
-            <img
-              className="hero-image"
-              src={imagePath}
-              alt="Hero Background"
-              onLoad={() => setImageLoaded(true)}
-              onError={(e) => {
-                console.warn('图片加载失败，使用默认背景');
-                setImageLoaded(false);
+          {useVideo ? (
+            <video
+              ref={videoRef}
+              className="hero-video"
+              src={videoPath}
+              autoPlay
+              muted
+              playsInline
+              preload="auto"
+              loop
+              onLoadedData={() => setVideoLoaded(true)}
+              onCanPlay={() => {
+                // 视频可以播放时立即开始播放
+                if (videoRef.current) {
+                  videoRef.current.play().catch(() => {
+                    // 静默处理播放失败
+                  });
+                }
+              }}
+              onError={() => {
+                // 视频加载失败，使用默认背景
+                setVideoLoaded(false);
               }}
             />
           ) : null}
           
-          {/* 图片覆盖层（可选，用于调整图片亮度） */}
-          {useImage && imageLoaded && (
-            <div className="hero-image-overlay"></div>
+          {/* 视频覆盖层（可选，用于调整视频亮度） */}
+          {useVideo && videoLoaded && (
+            <div className="hero-video-overlay"></div>
           )}
         </div>
 
@@ -36,7 +69,7 @@ const Hero = () => {
           <h1 className="hero-title">
             TechFocus
             <br />
-            Always Advancing
+            <span className="hero-subtitle">delivers mission-critical technology products<br />and solutions to the federal government</span>
           </h1>
         </div>
       </div>

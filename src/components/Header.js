@@ -6,6 +6,7 @@ import './Header.css';
 const Header = () => {
   const location = useLocation();
   const [capabilitiesDropdownOpen, setCapabilitiesDropdownOpen] = useState(false);
+  const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
 
   const handleCapabilitiesMouseEnter = () => {
     setCapabilitiesDropdownOpen(true);
@@ -15,6 +16,14 @@ const Header = () => {
     setCapabilitiesDropdownOpen(false);
   };
 
+  const handleCompanyMouseEnter = () => {
+    setCompanyDropdownOpen(true);
+  };
+
+  const handleCompanyMouseLeave = () => {
+    setCompanyDropdownOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -22,7 +31,20 @@ const Header = () => {
           <Logo />
           <nav className="nav">
             <ul className="nav-list">
-              <li><Link to="/company" className={location.pathname === '/company' ? 'active' : ''}>Company</Link></li>
+              <li 
+                className="nav-item dropdown"
+                onMouseEnter={handleCompanyMouseEnter}
+                onMouseLeave={handleCompanyMouseLeave}
+              >
+                <span className="nav-link dropdown-toggle">Company</span>
+                {companyDropdownOpen && (
+                  <ul className="dropdown-menu">
+                    <li><Link to="/company#about" className="dropdown-item">About us</Link></li>
+                    <li><Link to="/company#leadership" className="dropdown-item">Leadership</Link></li>
+                    <li><Link to="/company#contract" className="dropdown-item">Contract</Link></li>
+                  </ul>
+                )}
+              </li>
               <li 
                 className="nav-item dropdown"
                 onMouseEnter={handleCapabilitiesMouseEnter}

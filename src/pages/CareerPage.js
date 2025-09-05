@@ -12,33 +12,6 @@ const CareerPage = () => {
           <div className="career-title-line"></div>
         </div>
 
-        {/* Our Leadership Team - 左对齐 */}
-        <div className="leadership-section">
-          <h2 className="section-title">Our Leadership Team</h2>
-          <div className="section-line"></div>
-          
-          <div className="leadership-content">
-            <div className="leader-photo">
-              <img src="/images/lj.png" alt="Lijuan Wang" className="leader-image" />
-            </div>
-            <div className="leader-info">
-              <h3 className="leader-name">Lijuan Wang</h3>
-              <h4 className="leader-title">Founder & President, TechFocus LLC</h4>
-              <p className="leader-description">
-                Lijuan Wang is the founder and President of TechFocus LLC, a certified SBA 8(a) and Woman-Owned Small Business (WOSB) dedicated to delivering high-impact technology solutions and IT hardware to U.S. federal agencies.
-              </p>
-              <p className="leader-description">
-                With a Ph.D. in engineering and over a decade of experience at a National Renewable Energy Laboratory, Dr. Wang brings a rare blend of scientific depth and business acumen to the leadership of TechFocus. She is widely recognized for her work in fuel efficiency modeling, and her innovations have contributed to major industry platforms—including the theoretical foundation behind Google Maps' fuel-efficient routing feature.
-              </p>
-              <p className="leader-description">
-                Under her leadership, TechFocus has grown rapidly, securing multi-million-dollar government contracts in just its second year of operations. Dr. Wang is known for her strategic vision, hands-on problem solving, and deep commitment to integrity and long-term partnerships.
-              </p>
-              <p className="leader-description">
-                Driven by a passion for data, AI, and practical innovation, she is leading TechFocus into its next phase: expanding its footprint in advanced IT solutions while continuing to provide trusted, compliant, and cost-effective procurement to federal clients.
-              </p>
-            </div>
-          </div>
-        </div>
 
         {/* 第一个卡片 - Our People, Our Strength */}
         <div className="career-people-section">

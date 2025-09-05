@@ -9,8 +9,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-info">
-              <p><span className="orange-text">Always</span> Advancing</p>
-              <p className="footer-mission">Our mission is to exceed our government customers' expectations while maintaining an unparalleled level of service.</p>
+              <p><span className="orange-text">delivers</span> mission-critical technology products and solutions to the federal government</p>
               <div className="footer-vertical-line"></div>
               <div className="footer-nav-links">
                 <div className="footer-nav-item">Company</div>
@@ -31,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-logo">
-            <img src="/images/WechatIMG46.jpg" alt="TechFocus Logo" />
+            <img src="/images/flogo.jpg" alt="TechFocus Logo" />
           </div>
         </div>
         
