@@ -31,7 +31,7 @@ const ServicesSection = () => {
       id: 4,
       title: "Experience",
       image: "/images/4.jpg",
-      subtitle: "TechFocus has demonstrated excellence across both commercial and government sectors. On commercial platforms such as Amazon, we have successfully marketed and sold a wide range of IT hardware products, generating over $15 million in revenue by 2022. In the government space, we've built strong relationships with 18 federal agencies, including the Department of Veterans Affairs, the General Services Administration, and the U.S. Air Force. \n\nWe consistently exceed expectations in product quality, delivery, and service, and provide effective, compliant solutions aligned with GSA SIN 33411 standards — earning continued trust and repeat contracts.",
+      subtitle: "TechFocus has demonstrated excellence across both commercial and government sectors. On commercial platforms such as Amazon, we have successfully marketed and sold a wide range of IT hardware products. In the government space, we've built strong relationships with 18 federal agencies, including the Department of Veterans Affairs, the General Services Administration, and the U.S. Air Force. \n\nWe consistently exceed expectations in product quality, delivery, and service, and provide effective, compliant solutions — earning continued trust and repeat contracts.",
       description: [],
       textStyle: "times-text"
     }

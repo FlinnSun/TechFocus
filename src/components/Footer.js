@@ -29,6 +29,15 @@ const Footer = () => {
               </Link>
             </div>
           </div>
+          
+          {/* 中间区域 - 公司标识信息 */}
+          <div className="footer-section footer-center">
+            <div className="footer-identifiers">
+              <div className="footer-identifier-item">UEI：VK6PGKQ6CFN9</div>
+              <div className="footer-identifier-item">Legacy DUNS：116156259</div>
+            </div>
+          </div>
+          
           <div className="footer-logo">
             <img src="/images/flogo.jpg" alt="TechFocus Logo" />
           </div>

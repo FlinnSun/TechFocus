@@ -48,7 +48,7 @@ const AboutPage = () => {
           <div className="overview-right">
             <h2>OVERVIEW</h2>
             <p>
-              TechFocus provides end-to-end IT services and high-quality hardware solutions to federal, state, and local government agencies across the United States. With a proven track record of over $20 million in government sales and a GSA MAS contract (SIN 33411), we are a trusted partner for mission-critical technology and procurement.
+              TechFocus provides end-to-end IT services and high-quality hardware solutions to federal, state, and local government agencies across the United States. With a proven track record and exceptional technical expertise, we are a trusted partner for mission-critical technology and procurement.
             </p>
             <p>
               Our IT services span data analytics, AI/ML, cybersecurity, cloud infrastructure, agile development, and help desk support—empowering agencies to modernize systems, strengthen security, and drive digital transformation.
@@ -154,7 +154,7 @@ const AboutPage = () => {
 
         {/* Contract标题 */}
         <div id="contract" className="about-page-header">
-          <h1 className="about-page-title">Contract</h1>
+          <h1 className="about-page-title">Contract Vehicle</h1>
         </div>
 
         {/* GSA MAS Schedule 卡片 */}

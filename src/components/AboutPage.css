@@ -542,7 +542,7 @@
 
 /* Contract Section Styles */
 .contract-section {
-  background: #1E3A8A;
+  background: #4B81B3;
   padding: 30px 0;
   margin-bottom: 30px;
 }
@@ -602,7 +602,7 @@
   border: 2px solid #FFFFFF;
   border-radius: 8px;
   padding: 15px;
-  background: #1E3A8A;
+  background: #4B81B3;
 }
 
 .contract-detail {
@@ -633,7 +633,7 @@
 .gsa-logo-square {
   width: 60px;
   height: 60px;
-  background: #1E3A8A;
+  background: #4B81B3;
   display: flex;
   align-items: center;
   justify-content: center;

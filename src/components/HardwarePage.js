@@ -1,35 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './HardwarePage.css';
 
 const HardwarePage = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  
-  // Partners logo数组 - 4张图片
-  const partnerLogos = [
-    { id: 1, image: "/images/par1.png", alt: "Partner 1" },
-    { id: 2, image: "/images/par2.png", alt: "Partner 2" },
-    { id: 3, image: "/images/par3.png", alt: "Partner 3" },
-    { id: 4, image: "/images/par4.png", alt: "Partner 4" }
-  ];
-
-  // 每页显示4个logo，总共1页
-  const itemsPerPage = 4;
-  const totalPages = Math.ceil(partnerLogos.length / itemsPerPage);
-
-  // 自动播放
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % totalPages);
-    }, 4000); // 每4秒切换
-
-    return () => clearInterval(interval);
-  }, [totalPages]);
-
-  // 获取当前页的logo
-  const getCurrentPageLogos = () => {
-    const startIndex = currentIndex * itemsPerPage;
-    return partnerLogos.slice(startIndex, startIndex + itemsPerPage);
-  };
 
   return (
     <div className="hardware-page">
@@ -83,7 +55,7 @@ const HardwarePage = () => {
           {/* 描述文字 */}
           <div className="hardware-description">
             <p>
-              TechFocus delivers a comprehensive range of office electronics and computing products—including laptops, desktops, workstations, tablets, Chromebooks, servers, monitors, calculators, networking equipment, peripherals, and accessories. We work directly with trusted OEMs to ensure all equipment meets federal quality, compliance, and procurement standards.
+              TechFocus delivers a comprehensive range of office electronics and computing products—including laptops, desktops, workstations, tablets, Chromebooks, servers, monitors, calculators, networking equipment, peripherals, and accessories—working directly with trusted OEMs to ensure all equipment meets federal quality, compliance, and procurement standards. We have proven experience delivering solutions from leading brands such as Cisco, Dell, and HP across federal agencies.
             </p>
             <p>
               Our hardware is deployed across a wide spectrum of government environments—from DoD facilities and federal health agencies to civilian offices and mission-critical field operations. Whether supporting secure infrastructure at military bases or modernizing workstations for federal offices, we deliver with precision, speed, and accountability.
@@ -93,30 +65,6 @@ const HardwarePage = () => {
             </p>
           </div>
 
-          {/* Partners 部分 */}
-          <div className="hardware-partners">
-            <h2 className="section-title">Partners</h2>
-            <div className="section-line"></div>
-            
-            {/* Partners logo展示框 */}
-            <div className="partners-carousel">
-              {/* 显示当前页的logo */}
-              <div className="partners-row">
-                {getCurrentPageLogos().map((logo) => (
-                  <div key={logo.id} className="partner-logo">
-                    <img
-                      src={logo.image}
-                      alt={logo.alt}
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.parentElement.style.backgroundColor = '#ffffff';
-                      }}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

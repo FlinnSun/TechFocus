@@ -3,7 +3,7 @@ import './Hero.css';
 
 const Hero = () => {
   // 视频配置
-  const videoPath = '/videos/herovideo.mp4'; // 使用herovideo.mp4视频
+  const videoPath = '/videos/herovideo(1).mp4'; // 使用herovideo(1).mp4视频
   const useVideo = true; // 设置为 true 使用视频背景
   const [videoLoaded, setVideoLoaded] = useState(false);
   const videoRef = useRef(null);

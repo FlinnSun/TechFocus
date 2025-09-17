@@ -1,6 +1,6 @@
 .footer {
   background-color: #ffffff;
-  padding: 60px 0 40px;
+  padding: 30px 0 20px;
   border-top: 1px solid #E6E6E6;
 }
 
@@ -237,5 +237,55 @@
   .social-link:nth-child(3) img {
     width: 28px;
     height: 28px;
+  }
+}
+
+/* 中间区域样式 */
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* 公司标识信息样式 */
+.footer-identifiers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-identifier-item {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #000000;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #E6E6E6;
+  margin: 0;
+}
+
+/* 移动端标识信息样式 */
+@media (max-width: 768px) {
+  .footer-center {
+    padding: 0 10px;
+    margin: 20px 0;
+  }
+  
+  .footer-identifiers {
+    gap: 6px;
+  }
+  
+  .footer-identifier-item {
+    font-size: 18px;
+    line-height: 28.8px;
+    margin: 0 0 20px 0;
   }
 } 
